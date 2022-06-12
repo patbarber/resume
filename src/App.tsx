@@ -7,7 +7,7 @@ const App: Component = () => {
   return (
     <div class="container m-auto">
       <Header></Header>
-     {/*  <Content></Content> */}
+      <Content></Content>
    
     </div>
   );
