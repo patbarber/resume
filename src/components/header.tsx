@@ -3,7 +3,7 @@ import Typerwriter from "./typewriter";
 
 const Header: Component = () => {
   return (
-    <div class="flex h-screen">
+    <div class="grid h-screen">
       <div class="w-fit m-auto">
         <Typerwriter text="Patrick Barber Resume"></Typerwriter>
         <Typerwriter text="Web Developer"></Typerwriter>
