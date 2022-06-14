@@ -21,7 +21,7 @@ const About: Component = () => {
         <div class="grid grid-cols-1 md:grid-cols-2 m-auto w-fit">
           <div class="">
             <p class="w-fit text-4xl mb-4 m-auto">About Me</p>
-            <div class="font-mono">
+            <div class="font-mono p-4">
               I am a full stack developer and front end specialist currently
               working at Annex Digital as a consultant. I am experienced in
               working in a range of multidisciplinary teams of various sizes
@@ -30,7 +30,7 @@ const About: Component = () => {
           </div>
           <div>
             <p class="w-fit text-4xl mb-4 m-auto">Connect with me</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 m-auto text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 m-auto text-center p-4 max-w-fit">
               <For each={connect()}>
                 {(social, i) => (
                   <a href={`${social.link}`} target="_blank">
