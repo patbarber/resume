@@ -13,6 +13,11 @@ const About: Component = () => {
       icon: "linkedin-original.svg",
       link: "https://www.linkedin.com/in/patrick-barber-326996146/",
     },
+    {
+      name: "Email@email.com",
+      icon: "email-svgrepo-com.svg",
+      link: "mailto:email@email.com",
+    },
   ]);
 
   return (
@@ -46,6 +51,9 @@ const About: Component = () => {
               </For>
             </div>
           </div>
+        </div>
+        <div class="">
+          
         </div>
       </div>
     </div>
