@@ -15,7 +15,7 @@ const Content: Component = () => {
 
 
   return (
-    <div class="grid h-screen font-mono">
+    <div class="h-screen font-mono">
       <p class="m-auto w-fit text-4xl mb-4">Skills</p>
       <div class="grid grid-cols-1 md:grid-cols-2 m-auto w-fit text-center">
         <For each={skills()}>

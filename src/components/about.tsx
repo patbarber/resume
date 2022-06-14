@@ -16,7 +16,7 @@ const About: Component = () => {
   ]);
 
   return (
-    <div class="grid h-screen">
+    <div class="h-screen">
       <div class="w-fit m-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 m-auto w-fit">
           <div class="">
