@@ -21,7 +21,7 @@ const Content: Component = () => {
         <For each={skills()}>
           {(skill, i) => (
             <div class="m-2 text-xl grid grid-cols-2">
-              <img class="h-12" src={`./src/assets/skills/${skill.icon}`} />
+              <img class="h-12" src={`/src/assets/skills/${skill.icon}`} />
               <p class="m-auto">{skill.name}</p>
             </div>
           )}

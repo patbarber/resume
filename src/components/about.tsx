@@ -42,7 +42,8 @@ const About: Component = () => {
                     <div class="m-2 text-xl grid grid-cols-2">
                       <img
                         class="h-12"
-                        src={`./src/assets/socials/${social.icon}`}
+                        
+                        src={`/src/assets/socials/${social.icon}`}
                       />
                       <p class="m-auto">{social.name}</p>
                     </div>
