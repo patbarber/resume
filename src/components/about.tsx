@@ -1,21 +1,24 @@
 import type { Component } from "solid-js";
 import { createSignal, For } from "solid-js";
+import github from '../assets/socials/github-original.svg'
+import linkedin from '../assets/socials/linkedin-original.svg'
+import email from '../assets/socials/email-svgrepo-com.svg'
 
 const About: Component = () => {
   const [connect, setConnect] = createSignal([
     {
       name: "Github",
-      icon: "github-original.svg",
+      icon: github,
       link: "https://github.com/patbarber",
     },
     {
       name: "Linkedin",
-      icon: "linkedin-original.svg",
+      icon: linkedin,
       link: "https://www.linkedin.com/in/patrick-barber-326996146/",
     },
     {
       name: "Email@email.com",
-      icon: "email-svgrepo-com.svg",
+      icon: email,
       link: "mailto:email@email.com",
     },
   ]);
@@ -43,7 +46,7 @@ const About: Component = () => {
                       <img
                         class="h-12"
                         
-                        src={`/src/assets/socials/${social.icon}`}
+                        src={social.icon}
                       />
                       <p class="m-auto">{social.name}</p>
                     </div>

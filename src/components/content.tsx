@@ -1,17 +1,24 @@
 import type { Component } from "solid-js";
 import { createSignal, For } from "solid-js";
-import js from '../assets/skills/javascript-plain.svg'
+import javascript from '../assets/skills/javascript-plain.svg'
+import typescript from '../assets/skills/typescript-plain.svg'
+import dotnet from '../assets/skills/dot-net-plain-wordmark.svg'
+import java from '../assets/skills/java-plain.svg'
+import react from '../assets/skills/react-original.svg'
+import vuejs from '../assets/skills/vuejs-original.svg'
+import angularjs from '../assets/skills/angularjs-original.svg'
+import electron from '../assets/skills/electron-original.svg'
 
 const Content: Component = () => {
   const [skills, setSkills] = createSignal([
-    { name: "Javascript", icon: js },
-    { name: "Typescript", icon: "typescript-plain.svg" },
-    { name: "C#", icon: "dot-net-plain-wordmark.svg" },
-    { name: "Java", icon: "java-plain.svg" },
-    { name: "React", icon: "react-original.svg" },
-    { name: "Vuejs", icon: "vuejs-original.svg" },
-    { name: "Angular", icon: "angularjs-original.svg" },
-    { name: "Electron", icon: "electron-original.svg" },
+    { name: "Javascript", icon:  javascript},
+    { name: "Typescript", icon:  typescript},
+    { name: "C#", icon: dotnet },
+    { name: "Java", icon:  java},
+    { name: "React", icon: react },
+    { name: "Vuejs", icon: vuejs },
+    { name: "Angular", icon:  angularjs},
+    { name: "Electron", icon:  electron},
   ]);
 
 
