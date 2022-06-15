@@ -1,9 +1,10 @@
 import type { Component } from "solid-js";
 import { createSignal, For } from "solid-js";
+import js from '../assets/skills/javascript-plain.svg'
 
 const Content: Component = () => {
   const [skills, setSkills] = createSignal([
-    { name: "Javascript", icon: "javascript-plain.svg" },
+    { name: "Javascript", icon: js },
     { name: "Typescript", icon: "typescript-plain.svg" },
     { name: "C#", icon: "dot-net-plain-wordmark.svg" },
     { name: "Java", icon: "java-plain.svg" },
@@ -21,7 +22,7 @@ const Content: Component = () => {
         <For each={skills()}>
           {(skill, i) => (
             <div class="m-2 text-xl grid grid-cols-2">
-              <img class="h-12" src={`/src/assets/skills/${skill.icon}`} />
+              <img class="h-12" src={skill.icon} />
               <p class="m-auto">{skill.name}</p>
             </div>
           )}
