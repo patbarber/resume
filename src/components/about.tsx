@@ -3,6 +3,7 @@ import { createSignal, For } from "solid-js";
 import github from '../assets/socials/github-original.svg'
 import linkedin from '../assets/socials/linkedin-original.svg'
 import email from '../assets/socials/email-svgrepo-com.svg'
+import Experience from "./experience";
 
 const About: Component = () => {
   const [connect, setConnect] = createSignal([
@@ -57,7 +58,7 @@ const About: Component = () => {
           </div>
         </div>
         <div class="">
-          
+        <Experience></Experience>
         </div>
       </div>
     </div>
