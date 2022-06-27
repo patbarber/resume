@@ -13,10 +13,10 @@ import electron from "../assets/skills/electron-original.svg";
 
 const Experience: Component = () => {
   const [experience, setExperience] = createSignal([
-    { name: "adsf", icons: [typescript, react, electron] },
-    { name: "adsf", icons: [typescript, react, electron] },
-    { name: "adf", icons: [typescript, react, electron] },
-    { name: "adsf", icons: [typescript, react, electron] },
+    { name: "Vood", icons: [typescript, react] },
+    { name: "Department of Education, Skills and Employment", icons: [javascript, vuejs,] },
+    { name: "Services Australia", icons: [typescript, angularjs, java] },
+    { name: "Aurabox", icons: [typescript, react, electron] },
   ]);
   /* { name: "Typescript", icon:  typescript},
         { name: "C#", icon: dotnet },
