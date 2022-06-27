@@ -18,19 +18,14 @@ const Experience: Component = () => {
     { name: "Services Australia", icons: [typescript, angularjs, java] },
     { name: "Aurabox", icons: [typescript, react, electron] },
   ]);
-  /* { name: "Typescript", icon:  typescript},
-        { name: "C#", icon: dotnet },
-        { name: "Java", icon:  java},
-        { name: "React", icon: react },
-        { name: "Vuejs", icon: vuejs },
-        { name: "Angular", icon:  angularjs},
-        { name: "Electron", icon:  electron}, */
+
   return (
-    <div class="p-4 overflow-x-auto grid grid-cols-3 grid-rows-1">
+    <div class="p-4 overflow-x-auto grid grid-cols-4 grid-rows-1">
       <For each={experience()}>
         {(experience, i) => (
           <div>
             <p class="text-2xl mb-2">{experience.name}</p>
+           {/*  <p>Role: {experience.postions}</p> */}
             <p class="mb-2">Skills used: </p>
             <div class="grid grid-rows-1 grid-flow-col w-fit space-x-1">
               <For each={experience.icons}>

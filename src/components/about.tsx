@@ -17,7 +17,7 @@ const About: Component = () => {
       icon: linkedin,
       link: "https://www.linkedin.com/in/patrick-barber-326996146/",
     },
-    {
+    { 
       name: "Email@email.com",
       icon: email,
       link: "mailto:email@email.com",
@@ -39,17 +39,16 @@ const About: Component = () => {
           </div>
           <div>
             <p class="w-fit text-4xl mb-4 m-auto">Connect with me</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 m-auto text-center p-4 max-w-fit">
+            <div class="grid grid-cols-1  m-auto p-4 max-w-fit">
               <For each={connect()}>
                 {(social, i) => (
                   <a href={`${social.link}`} target="_blank">
                     <div class="m-2 text-xl grid grid-cols-2">
                       <img
-                        class="h-12"
-                        
+                        class="h-12 m-auto"
                         src={social.icon}
                       />
-                      <p class="m-auto">{social.name}</p>
+                      <p class="w-full text-left m-auto">{social.name}</p>
                     </div>
                   </a>
                 )}
