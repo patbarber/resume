@@ -1,8 +1,8 @@
 import type { Component } from "solid-js";
 import { createSignal, For } from "solid-js";
-import github from '../assets/socials/github-original.svg'
-import linkedin from '../assets/socials/linkedin-original.svg'
-import email from '../assets/socials/email-svgrepo-com.svg'
+import github from "../assets/socials/github-original.svg";
+import linkedin from "../assets/socials/linkedin-original.svg";
+import email from "../assets/socials/email-svgrepo-com.svg";
 import Experience from "./experience";
 
 const About: Component = () => {
