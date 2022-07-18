@@ -40,7 +40,7 @@ const Experience: Component = () => {
       <div class="w-fit m-auto">
       <p class="w-fit text-4xl mb-4 m-auto">Experience</p>
 
-        <div class="m-auto overflow-x-auto grid gap-4  max-w-3xl">
+        <div class="m-auto p-4 grid gap-4  md:max-w-3xl">
           <For each={experience()}>
             {(experience, i) => (
               <div class="hover:bg-neutral-900">

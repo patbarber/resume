@@ -27,7 +27,7 @@ const About: Component = () => {
   return (
     <div class="h-screen">
       <div class="w-fit m-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 m-auto w-fit">
+        <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 m-auto w-fit">
           <div class="">
             <p class="w-fit text-4xl mb-4 m-auto">About Me</p>
             <div class="font-mono p-4">
