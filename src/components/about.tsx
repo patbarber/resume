@@ -56,9 +56,7 @@ const About: Component = () => {
             </div>
           </div>
         </div>
-        <div class="">
-        <Experience></Experience>
-        </div>
+       
       </div>
     </div>
   );
