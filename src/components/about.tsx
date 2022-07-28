@@ -17,11 +17,11 @@ const About: Component = () => {
       icon: linkedin,
       link: "https://www.linkedin.com/in/patrick-barber-326996146/",
     },
-    { 
+/*    { 
       name: "Email@email.com",
       icon: email,
       link: "mailto:email@email.com",
-    },
+    }, */
   ]);
 
   return (
@@ -29,7 +29,7 @@ const About: Component = () => {
       <div class="w-fit m-auto">
         <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 m-auto w-fit">
           <div class="">
-            <p class="w-fit text-4xl mb-4 m-auto">About Me</p>
+            <p class="w-fit text-4xl mb-4 m-auto">About me</p>
             <div class="font-mono p-4">
               I am a full stack developer and front end specialist currently
               working at Annex Digital as a consultant. I am experienced in
