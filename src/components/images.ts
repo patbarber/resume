@@ -6,6 +6,8 @@ import react from "../assets/skills/react-original.svg";
 import vuejs from "../assets/skills/vuejs-original.svg";
 import angularjs from "../assets/skills/angularjs-original.svg";
 import electron from "../assets/skills/electron-original.svg";
+import downArrow from "../assets/downArrow.svg";
+
 
 export default {
   javascript,
@@ -16,4 +18,5 @@ export default {
   vuejs,
   angularjs,
   electron,
+  downArrow
 };
