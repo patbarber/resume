@@ -12,13 +12,13 @@ import angularjs from "../assets/skills/angularjs-original.svg";
 import electron from "../assets/skills/electron-original.svg";
 
 export type Exp = {
-  name: string,
-  icons: string[],
-  postion: string,
-  description: string,
-  dates: string,
-  company: string
-}
+  name: string;
+  icons: string[];
+  postion: string;
+  description: string;
+  dates: string;
+  company: string;
+};
 
 const Experience: Component = () => {
   const [experience, setExperience] = createSignal<Exp[]>([
@@ -63,11 +63,13 @@ const Experience: Component = () => {
 
   return (
     <div class="h-screen">
-      <div class="w-fit m-auto">
-        <p class="w-fit text-4xl mb-4 m-auto">Experience</p>
+      <div class=" m-auto">
+        <p class="w-fit text-4xl mb-4 m-auto">Professional experience</p>
 
-        <div class="m-auto p-4 grid grid-cols-3 gap-4  md:max-w-3xl">
+        <div class="m-auto p-4 grid grid-cols-3 gap-4">
           <div class="col-span-1">
+            <p class="w-fit text-2xl mb-4 m-auto">Projects</p>
+
             <For each={experience()}>
               {(exp, i) => (
                 <div
@@ -89,9 +91,12 @@ const Experience: Component = () => {
             </For>
           </div>
           <div class="hover:bg-neutral-900 col-span-2">
+            <p class="w-fit text-2xl mb-4 m-auto">Click a project to see more information</p>
+
+            <p class="text-2xl">{selectedExp()?.name}</p>
+            <p>company: {selectedExp()?.company}</p>
+            <p>Dates: {selectedExp()?.dates}</p>
             <p>Project Description: {selectedExp()?.description}</p>
-            <p>Dates:</p>
-            <p>company:</p>
           </div>
         </div>
       </div>
