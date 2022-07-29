@@ -11,15 +11,24 @@ import vuejs from "../assets/skills/vuejs-original.svg";
 import angularjs from "../assets/skills/angularjs-original.svg";
 import electron from "../assets/skills/electron-original.svg";
 
+export type Exp = {
+  name: string,
+  icons: string[],
+  postion: string,
+  description: string,
+  dates: string,
+  company: string
+}
+
 const Experience: Component = () => {
-  const [experience, setExperience] = createSignal([
+  const [experience, setExperience] = createSignal<Exp[]>([
     {
       name: "Vood",
       icons: [images.typescript, react],
       postion: "Front end developer",
       description: "ecommerce",
       dates: "at some point",
-      Company: "annex",
+      company: "annex",
     },
     {
       name: "Department of Education, Skills and Employment",
@@ -27,7 +36,7 @@ const Experience: Component = () => {
       postion: "Fullstack developer",
       description: "ecommerce333",
       dates: "at some point",
-      Company: "annex",
+      company: "annex",
     },
     {
       name: "Services Australia",
@@ -35,7 +44,7 @@ const Experience: Component = () => {
       postion: "Fullstack developer",
       description: "ecommerce22",
       dates: "at some point",
-      Company: "annex",
+      company: "Services",
     },
     {
       name: "Aurabox",
@@ -43,19 +52,14 @@ const Experience: Component = () => {
       postion: "Front end developer",
       description: "ecommerce1212",
       dates: "at some point",
-      Company: "annex",
+      company: "annex",
     },
   ]);
-
-  const [selectedExp, setSelectedExp] = createSignal();
+  const [selectedExp, setSelectedExp] = createSignal<Exp>();
 
   const select = (exp: any) => {
-    console.log(exp);
-    const element = <div>hello</div>;
     return setSelectedExp(exp);
   };
-
-  const expSelected = createMemo(() => selectedExp());
 
   return (
     <div class="h-screen">
@@ -85,9 +89,9 @@ const Experience: Component = () => {
             </For>
           </div>
           <div class="hover:bg-neutral-900 col-span-2">
-            <p>Project Description: {expSelected()?.description}</p>
+            <p>Project Description: {selectedExp()?.description}</p>
             <p>Dates:</p>
-            <p>Company:</p>
+            <p>company:</p>
           </div>
         </div>
       </div>
