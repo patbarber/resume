@@ -10,7 +10,6 @@ import react from "../assets/skills/react-original.svg";
 import vuejs from "../assets/skills/vuejs-original.svg";
 import angularjs from "../assets/skills/angularjs-original.svg";
 import electron from "../assets/skills/electron-original.svg";
-import querySnapshot from '../api/api'
 import { async } from "@firebase/util";
 import getData from "../api/api";
 export type Exp = {
@@ -60,7 +59,9 @@ const Experience: Component = () => {
   const [selectedExp, setSelectedExp] = createSignal<Exp>();
 
   const select = async (exp: any) => {
-    await getData();
+    console.log(import.meta.env.VITE_TEST_VAR);
+
+    //await getData();
     return setSelectedExp(exp);
   };
 
@@ -92,7 +93,9 @@ const Experience: Component = () => {
             </For>
           </div>
           <div class="bg-neutral-900 col-span-2">
-            <p class="w-fit text-2xl mb-4 m-auto">Click a project to see more information</p>
+            <p class="w-fit text-2xl mb-4 m-auto">
+              Click a project to see more information
+            </p>
 
             <p class="text-2xl">{selectedExp()?.name}</p>
             <p>company: {selectedExp()?.company}</p>
